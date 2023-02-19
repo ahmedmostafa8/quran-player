@@ -114,6 +114,10 @@ body {
   background-color: #424242;
   padding: 10px;
   color: #efefef;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  justify-content: center;
 }
 .container .content .sorah {
   display: flex;
@@ -123,6 +127,7 @@ body {
   background-color: #15161a;
   margin-bottom: 20px;
   cursor: pointer;
+  width:30%;
 }
 .container .content .sorah:hover {
   background-color: #222222;
@@ -132,9 +137,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.container .content .sorah:last-child {
-  margin-bottom: 0;
 }
 .container .content .sorah .sorah_count,
 .container .content .sorah .ayah_count {
