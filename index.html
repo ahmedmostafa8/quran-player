@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran Player</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="the_content">
+      <div class="container">
+        <div class="header">
+          <p class="ayah_text">اضغط على السورة للإستماع إليها</p>
+          <audio class="ayah_audio" controls autoplay>
+            <source src="" />
+          </audio>
+          <div class="controls">
+            <div class="prev"><i class="fa-solid fa-backward"></i></div>
+            <div id="playBtn" class="play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="next"><i class="fa-solid fa-forward"></i></div>
+          </div>
+        </div>
+        <div class="content" dir="rtl"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

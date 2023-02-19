@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color1: #fab22e;
+  --color2: #15161a;
+  --color3: #3a12b1;
+  --color4: #efefef;
+  --color5: #111;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+body {
+  background-color: #4e4e4e;
+}
+
+.the_content .container{
+  width: 100%;
+  max-width: 700px;
+}
+.container .header {
+  margin-top: 20px;
+  background-color: #15161a;
+  color: #efefef;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .header .ayah_text {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.container .header .ayah_audio {
+  box-shadow: 0px 0px 500px #efefef;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+}
+.container .header .controls {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+.container .content {
+  margin-top: 30px;
+  background-color: #424242;
+  padding: 10px;
+  color: #efefef;
+}
+.container .content .sorah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #15161a;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.container .content .sorah:hover {
+  background-color: #222222;
+}
+.container .content .sorah .sorah_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .content .sorah:last-child {
+  margin-bottom: 0;
+}
+.container .content .sorah .sorah_count,
+.container .content .sorah .ayah_count {
+  font-size: 20px;
+  width: 40px;
+  display: flex;
+}
+.container .content .sorah .ayah_count {
+  justify-content: end;
+}
+
+.no-data {
+  display: none;
+}
+
+.prev,.play,.pause,.next {
+  cursor: pointer;
+  user-select: none;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
